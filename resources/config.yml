@@ -20,12 +20,12 @@ alert-message:
 
   # Select the type of the message.
   # Available types: message, title, tip, popup
-  type: message
+  type: tip
 
   # Configure the text of the message here.
   # {TIME} Duration until the entities are removed.
   # {UNIT} Unit of the time. E.g. minutes
-  text: '&7[&cClearLag&7] &fAll entities will be removed in &c{TIME} {UNIT}&f!'
+  text: ' §7Sampah akan dibersihkan dalam: §6{TIME}'
 
 # After each removal, a success message is sent to the players.
 # Here you can adjust all success-message-related settings.
@@ -33,12 +33,12 @@ success-message:
 
   # Select the type of the message.
   # Available types: message, title, tip, popup
-  type: message
+  type: tip
 
   # Configure the text of the message here.
   # {ENTITY_COUNT} Number of removed entities.
   # {ITEM_COUNT} Number of removed items.
-  text: '&7[&cClearLag&7] &c{ITEM_COUNT} items &fand &c{ENTITY_COUNT} entities &fwere removed.'
+  text: ' §a{ENTITY_COUNT} & {ITEM_COUNT}§7 Telah dibersihkan§a!'
 
 # ClearLag offers the possibility to remove entities manually by command.
 # Here you can adjust all command-related settings.
@@ -65,7 +65,7 @@ clearlag/preferences:
   # Set whether the clearlag messages should be logged in the console.
   # If false, the messages are only sent to the players.
   # True by default.
-  logging/console: true
+  logging/console: false
 
   # Set here when ClearLag sends alert messages.
   # E.g. ["15m", "10m", "5m", "1m", "3s", "2s", "1s"]
